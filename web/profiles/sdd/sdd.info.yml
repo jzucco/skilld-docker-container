@@ -1,14 +1,15 @@
 name: SDD
 type: profile
 description: 'Skill drupal development installation profile for content projects'
-core: 8.x
+core_version_requirement: ^9
 
 dependencies:
   - automated_cron
   - big_pipe
   - block
   - block_content
-  - block_content_permissions
+  # Missing commit for d9 compatibility https://www.drupal.org/project/block_content_permissions/issues/3117955
+  # - block_content_permissions
   - breakpoint
   - ckeditor
   - color
@@ -16,11 +17,13 @@ dependencies:
   - config_translation
   - contextual
   - crop
+  - ctools
   - datetime
   - datetime_range
   - dblog
   - dynamic_page_cache
   - editor
+  - entity_reference_revisions
   - field
   - field_layout
   - field_ui
@@ -38,6 +41,7 @@ dependencies:
   - media
   - media_library
   - menu_link_attributes
+  - menu_link_content
   - menu_ui
   - node
   - options
@@ -45,38 +49,43 @@ dependencies:
   - page_manager
   - page_manager_ui
   - panels
-  - panels_everywhere
+  # Missing commit for d9 compatibility https://www.drupal.org/project/panels_everywhere/issues/3111407
+  # - panels_everywhere
   - path
   - path_alias
   - quickedit
-  - rabbit_hole
+  # Missing commit for d9 compatibility https://www.drupal.org/project/rabbit_hole/issues/3091139
+  # - rabbit_hole
   - rdf
   - redirect
   - redirect_404
   - responsive_image
-  - rh_media
-  - rh_taxonomy
-  - rh_user
+  # Missing commit for d9 compatibility https://www.drupal.org/project/rabbit_hole/issues/3091139
+  # - rh_media
+  # - rh_taxonomy
+  # - rh_user
   - shortcut
   - svg_image
   - system
   - taxonomy
   - telephone
-  - telephone_validation
+  # Missing commit for d9 compatibility https://www.drupal.org/project/telephone_validation/issues/3091459
+  # - telephone_validation
   - text
   - token
   - toolbar
   - update
   - user
-  - username_enumeration_prevention
+  # Missing commit for d9 compatibility https://www.drupal.org/project/username_enumeration_prevention/issues/3111079
+  # - username_enumeration_prevention
   - views_bulk_edit
   - views_bulk_operations
   - views_ui
   - webform
   - webform_ui
   - manage_display
-  - menu_admin_per_menu
-  - menu_link_content
+  # Missing commit for d9 compatibility https://www.drupal.org/project/menu_admin_per_menu/issues/3042751
+  # - menu_admin_per_menu
   - pathauto
   - content_translation
   - views

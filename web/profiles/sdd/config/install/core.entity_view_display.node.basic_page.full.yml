@@ -29,17 +29,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-  created:
-    label: inline
-    type: timestamp
-    weight: 2
-    settings:
-      show_prefix_label: true
-      date_format: long
-      custom_date_format: ''
-      timezone: ''
-    region: content
-    third_party_settings: {  }
   title:
     label: hidden
     type: title

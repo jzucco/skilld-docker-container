@@ -56,7 +56,8 @@ endif
 ## Validate composer.json file
 compval:
 	@echo "Composer.json validation..."
-	@docker run --rm -v `pwd`:`pwd` -w `pwd` $(IMAGE_PHP) composer validate --strict
+	# Can't use --strict cause we need dev versions for d9 compatibility
+	@docker run --rm -v `pwd`:`pwd` -w `pwd` $(IMAGE_PHP) composer validate
 
 ## Validate hook_update_N()
 hookupdateval:
