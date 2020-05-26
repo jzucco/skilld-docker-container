@@ -81,8 +81,8 @@ dependencies:
   - views_bulk_edit
   - views_bulk_operations
   - views_ui
-  - webform
-  - webform_ui
+#  - webform
+#  - webform_ui
   - manage_display
   # Missing commit for d9 compatibility https://www.drupal.org/project/menu_admin_per_menu/issues/3042751
   # - menu_admin_per_menu

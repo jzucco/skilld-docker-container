@@ -16,6 +16,7 @@
     }
   ],
   "require": {
+    "composer/installers": "^1.9",
     "cweagans/composer-patches": "^1.6.5",
     "drupal-composer/drupal-scaffold": "^2.5",
     "drupal/better_normalizers": "^1.0@beta",
@@ -30,14 +31,14 @@
     "drupal/menu_link_attributes": "1.x-dev",
     "drupal/page_manager": "^4.0@beta",
     "drupal/panels": "^4.6",
-    "drupal/paragraphs": "^1.11",
+    "drupal/paragraphs": "^1.12",
     "drupal/pathauto": "^1.8",
     "drupal/redirect": "^1.6",
     "drupal/svg_image": "^1",
     "drupal/swiftmailer": "^2",
     "drupal/token": "^1",
     "drupal/views_bulk_edit": "2.x-dev",
-    "drupal/webform": "^5.12",
+    "drupal/webform": "5.x-dev",
     "drush/drush": "^10.1.0",
     "zaporylie/composer-drupal-optimizations": "^1.0"
   },
@@ -133,15 +134,8 @@
       "drupal/page_manager": {
         "Unable to add selection criteria (content type) after updating from 8.x-4.0-beta 4 to 8.x-4.0-beta5": "https://www.drupal.org/files/issues/2020-04-03/3124470-5.patch"
       },
-      "drupal/paragraphs": {
-        "Remove own sortablejs library, remove remaining 8.8 deprecations": "https://www.drupal.org/files/issues/2020-02-11/3055618-19.patch"
-      },
       "drupal/svg_image": {
         "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-05-05/svg_image-3122818-6.patch"
-      },
-      "drupal/webform": {
-        "[Webform 8.x-6.x] Fix subclassing and stop overriding constructors": "https://www.drupal.org/files/issues/2020-05-07/3067546-85.patch",
-        "Update deprecated code": "https://www.drupal.org/files/issues/2020-03-14/webform-deprecations-8.8-3119788-3.patch"
       }
     }
   }
